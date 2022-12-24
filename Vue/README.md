@@ -1,7 +1,7 @@
 # Vue
 ## 1. Vue 的基本原理
     当一个Vue 实例创建时，Vue 会遍历 data 中的属性，用 Object.defineProperty ( vue3.0 使 用 proxy ) 将 它 们 转 为 getter/setter，并且在内部追踪相关依赖，在属性被访问和修改时 通知变化。 每个组件实例都有相应的 watcher 程序实例，它会在组 件渲染的过程中把属性记录为依赖，之后当依赖项的 setter 被调用 时，会通知 watcher 重新计算，从而致使它关联的组件得以更新。
-    ![alt 属性文本](./vue1.png)
+  ![alt 属性文本](https://github.com/ChaiDongYa/FrontEnd/blob/master/Vue/vue1.png)
 
 ## 2. 双向数据绑定的原理
 

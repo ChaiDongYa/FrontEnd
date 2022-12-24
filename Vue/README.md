@@ -140,25 +140,25 @@ MPA：
 
   3. 组件化
 
-  React 与 Vue 最大的不同是模板的编写。
+    1. React 与 Vue 最大的不同是模板的编写。
 
-  Vue 鼓励写近似常规 HTML 的模板。写起来很接近标准 HTML 元素，只 是多了一些属性。
+    2. Vue 鼓励写近似常规 HTML 的模板。写起来很接近标准 HTML 元素，只 是多了一些属性。
 
-  React 推荐你所有的模板通用 JavaScript 的语法扩展——JSX 书写。
+    3. React 推荐你所有的模板通用 JavaScript 的语法扩展——JSX 书写。
 
   具体来讲:React 中 render 函数是支持闭包特性的，所以 import 的 组件在 render 中可以直接调用。但是在 Vue 中，由于模板中使用的 数据都必须挂在 this 上进行一次中转，所以 import 一个组件完了 之后，还需要在 components 中再声明下。
 
   4. 监听数据变化的实现原理不同
 
-  Vue 通过 getter/setter 以及一些函数的劫持，能精确知道数据变 化，不需要特别的优化就能达到很好的性能
+    1. Vue 通过 getter/setter 以及一些函数的劫持，能精确知道数据变 化，不需要特别的优化就能达到很好的性能
 
-  React 默认是通过比较引用的方式进行的，如果不优化 (PureComponent/shouldComponentUpdate)可能导致大量不必要的 vDOM 的重新渲染。这是因为 Vue 使用的是可变数据，而 React 更强 调数据的不可变。
+    2. React 默认是通过比较引用的方式进行的，如果不优化 (PureComponent/shouldComponentUpdate)可能导致大量不必要的 vDOM 的重新渲染。这是因为 Vue 使用的是可变数据，而 React 更强 调数据的不可变。
 
   5. 高阶组件
 
-  react 可以通过高阶组件(HOC)来扩展，而 Vue 需要通过 mixins 来 扩展。
+    1. react 可以通过高阶组件(HOC)来扩展，而 Vue 需要通过 mixins 来 扩展。
 
-  高阶组件就是高阶函数，而 React 的组件本身就是纯粹的函数，所以 高阶函数对 React 来说易如反掌。相反 Vue.js 使用 HTML 模板创建视 图组件，这时模板无法有效的编译，因此 Vue 不能采用 HOC 来实现。
+    2. 高阶组件就是高阶函数，而 React 的组件本身就是纯粹的函数，所以 高阶函数对 React 来说易如反掌。相反 Vue.js 使用 HTML 模板创建视 图组件，这时模板无法有效的编译，因此 Vue 不能采用 HOC 来实现。
 
 ## 12.Vue 的优点
 1. 轻量级框架:只关注视图层，是一个构建数据的视图集合，大小只有几十kb ;
